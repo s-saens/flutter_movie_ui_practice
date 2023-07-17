@@ -36,6 +36,8 @@ dependencies:
   freezed:
   hive:
   hive_flutter: 
+  flutter_launcher_icons:
+  package_info_plus: 
 
 
   # The following adds the Cupertino Icons font to your application.
