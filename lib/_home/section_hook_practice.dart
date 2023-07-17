@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_movie_ui_practice/_home/hooks/hook_my_timer.dart';
-import 'package:flutter_movie_ui_practice/data/d_colors.dart';
 
 class HookPractice extends HookWidget {
   const HookPractice({super.key});
@@ -15,7 +14,6 @@ class HookPractice extends HookWidget {
       child: Text(
         'counter: $time',
         style: const TextStyle(
-          color: kColor2,
           fontSize: 25,
         ),
       ),

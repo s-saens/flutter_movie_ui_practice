@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_ui_practice/data/d_colors.dart';
 
 class MySearchBar extends StatelessWidget {
   const MySearchBar({
@@ -16,11 +15,10 @@ class MySearchBar extends StatelessWidget {
       child: Container(
         height: 50,
         decoration: BoxDecoration(
-          color: kSearchBarColor,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(20),
           boxShadow: const [
             BoxShadow(
-              color: kSearchBarShadowColor,
               offset: Offset(2, 3),
               blurRadius: 20,
             ),
@@ -34,7 +32,6 @@ class MySearchBar extends StatelessWidget {
             ),
             Icon(
               Icons.search_rounded,
-              color: kColor3,
             ),
           ],
         ),

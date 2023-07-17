@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_ui_practice/data/d_colors.dart';
 import 'package:flutter_movie_ui_practice/data/d_movies.dart';
 
 class ForYouCard extends StatefulWidget {
@@ -25,7 +24,6 @@ class _ForYouCardState extends State<ForYouCard> {
           child: Text(
             'For You',
             style: TextStyle(
-              color: kColor3,
               fontSize: 20,
             ),
             textAlign: TextAlign.left,

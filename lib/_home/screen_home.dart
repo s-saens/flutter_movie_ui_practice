@@ -3,7 +3,6 @@ import 'package:flutter_movie_ui_practice/_home/section_foryou_card.dart';
 import 'package:flutter_movie_ui_practice/_home/section_header.dart';
 import 'package:flutter_movie_ui_practice/_home/section_hook_practice.dart';
 import 'package:flutter_movie_ui_practice/_home/section_search_bar.dart';
-import 'package:flutter_movie_ui_practice/data/d_colors.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -15,9 +14,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: kBackgroundColor,
-      body: Stack(
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
+      body: const Stack(
         children: [
           SafeArea(
             child: SingleChildScrollView(
