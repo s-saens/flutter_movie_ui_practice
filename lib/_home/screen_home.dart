@@ -3,6 +3,8 @@ import 'package:flutter_movie_ui_practice/_home/section_foryou_card.dart';
 import 'package:flutter_movie_ui_practice/_home/section_header.dart';
 import 'package:flutter_movie_ui_practice/_home/section_riverpod_hooks_practice.dart';
 import 'package:flutter_movie_ui_practice/_home/section_search_bar.dart';
+import 'package:flutter_movie_ui_practice/_home/widget_user_card.dart';
+import 'package:flutter_movie_ui_practice/data/d_user.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -28,9 +30,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   Header(),
                   MySearchBar(),
                   ForYouCard(),
-
-                  SizedBox(height: 20),
                   RiverpodHookPractice(),
+                  UserCard(
+                    user: UserModel(
+                      id: "ssh9199",
+                      name: "Sanghun",
+                      email: "songsh5775@naver.com",
+                      password: "1234",
+                    ),
+                  ),
                 ],
               ),
             ),
