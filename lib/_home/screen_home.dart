@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_ui_practice/_home/section_foryou_card.dart';
 import 'package:flutter_movie_ui_practice/_home/section_header.dart';
-import 'package:flutter_movie_ui_practice/_home/section_riverpod_practice.dart';
-import 'package:flutter_movie_ui_practice/_home/section_hook_practice.dart';
+import 'package:flutter_movie_ui_practice/_home/section_riverpod_hooks_practice.dart';
 import 'package:flutter_movie_ui_practice/_home/section_search_bar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -29,8 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   Header(),
                   MySearchBar(),
                   ForYouCard(),
-                  HookPractice(),
-                  RiverpodPractice(),
+
+                  SizedBox(height: 20),
+                  RiverpodHookPractice(),
                 ],
               ),
             ),
