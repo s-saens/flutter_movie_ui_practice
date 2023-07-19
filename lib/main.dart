@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_movie_ui_practice/_home/screen_home.dart';
 import 'package:flutter_movie_ui_practice/_home/theme/theme_dark.dart';
 import 'package:flutter_movie_ui_practice/_home/theme/theme_light.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

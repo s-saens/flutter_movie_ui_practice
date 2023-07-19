@@ -12,7 +12,7 @@ class HookPractice extends HookWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Text(
-        'counter: $time',
+        'hook timer: $time',
         style: const TextStyle(
           fontSize: 25,
         ),
